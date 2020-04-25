@@ -8,15 +8,15 @@ dashboard.config.init_from(file='config.cfg')
 dashboard.bind(app)
 
 @app.route('/')
-def hello_world():
-    return 'Hello, World!'
+def index():
+    return 'Flask Monitoring Dashboard tutorial'
 
 @app.route('/endpoint1')
 def endpoint1():
     time.sleep(0.20)
-    return 'Endpointw', 400
+    return 'Endpoint1', 400
 
 @app.route('/endpoint2')
 def endpoint2():
     time.sleep(5)
-    return 'Endpoint3'
+    return 'Endpoint2'
