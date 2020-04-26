@@ -8,7 +8,7 @@ dashboard.config.init_from(file='config.cfg')
 dashboard.bind(app)
 
 @app.route('/')
-def index():
+def hello_world():
     return 'Flask Monitoring Dashboard tutorial'
 
 @app.route('/endpoint1')
