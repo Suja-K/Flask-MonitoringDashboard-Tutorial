@@ -26,7 +26,7 @@ dashboard.bind(app)
 
 @app.route('/')
 def hello_world():
-    return 'Flask Monitoring Dashboard tutorial'
+    return 'Flask-Monitoring-Dashboard tutorial'
 
 @app.route('/endpoint1')
 def endpoint1():
